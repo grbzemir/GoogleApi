@@ -3,11 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Location and Map</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <stylesheet href="style.css">
-            <script src="script.js"></script>
+        <div id="map" style="height: 500px; width: 100%;"></div>
+        <div id="results"></div>
 
-        </body>
-    </html>
+        <script src="script.js"></script>
+        <!-- Google Maps API'yi async ve defer ile birlikte yükleyin -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6QJfyz0Ss0RWo5F_j9PXPzNLNQCGjGpA&callback=initMap"
+            async
+            defer></script>
+    </body>
+</html>
